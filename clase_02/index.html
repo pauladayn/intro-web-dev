@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>HTML</title>
+  </head>
+  <body>
+    <h1>Estructuctura HTML</h1>
+    <p>
+      Dentro del body de nuestro doc html, podemos organizar y diferenciar el
+      contenido que va a llevar nuestra página web de acuerdo a al tipo de
+      elemento, de forma semántica, declarativa y por jerarquías
+    </p>
+    <h2>Tipos de tags</h2>
+    <p>
+      De acuerdo a la forma en que se renderizan el el browser, los tags por
+      default tienen dos tipos de display
+    </p>
+    <h3>Tags block e inline</h3>
+    <p style="border: 5px solid magenta; padding: 5px">
+      un tag de tipo block o bloque es aquel que toma todo el width (ancho)
+      disponible en el body y,
+      <em>empuja a los demás elementos hacia arriba o abajo</em> (y no hacia los
+      costados)
+    </p>
+    <h4>Elementos de tipo block son:</h4>
+    <h1
+      style="
+        border: 5px solid greenyellow;
+
+        padding: 5px;
+      "
+    >
+      los headings del h1 al h6
+    </h1>
+    <p
+      style="
+        border: 5px solid lightseagreen;
+
+        padding: 5px;
+      "
+    >
+      los párrafos
+    </p>
+    <h3 style="border: 5px solid orange; padding: 5px">las listas</h3>
+    <ul
+      style="
+        border: 5px solid slateblue;
+
+        padding: 5px;
+      "
+    >
+      <li>soy un item adentro de una lista :)</li>
+      <li>yo soy otro item adentro de la lista :)</li>
+    </ul>
+
+    <h3>Tags inline</h3>
+    <p>
+      los tags <strong>toman solo el espacio dentro de la misma línea</strong> y
+      a diferencia de los elementos block se pueden
+      <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/a"
+        >insertar</a
+      >
+      dentro de otros tags sin 'empujar' en dirección vertical
+    </p>
+    <p style="color: blue">
+      ¿Qué se imaginan que pasará si yo elimino el texto de mi primer tag p?
+    </p>
+    <p>¿Que pasaría con este párrafo?</p>
+
+    <h3>
+      los tags a o anchor tag, pueden dirigir a un mismo archivo dentro de
+      nuestro proyecto o a enlaces externos.
+    </h3>
+
+    <a href="mistakes.html">link hacia otro doc dentro de mi proyecto</a>
+    <a href="https://www.google.com"
+      >Link hacia otra página por fuera de mi proyecto</a
+    >
+    <img src="./assets/inlineVSBlock.jpeg" alt="soy un tag autocontenido" />
+    
+  </body>
+</html>
